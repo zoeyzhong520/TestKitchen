@@ -46,6 +46,10 @@
 		BC4286A91DB9BA0E0048617F /* UILabel+Commom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4286A81DB9BA0E0048617F /* UILabel+Commom.swift */; };
 		BC4286AB1DB9BB820048617F /* UIButton+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4286AA1DB9BB820048617F /* UIButton+Common.swift */; };
 		BC4286AD1DB9C3890048617F /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4286AC1DB9C3890048617F /* Const.swift */; };
+		BCF2543E1DBD98F300ABD6A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF2543D1DBD98F300ABD6A7 /* Images.xcassets */; };
+		BCF254401DBD9BF700ABD6A7 /* Controllers.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF2543F1DBD9BF700ABD6A7 /* Controllers.json */; };
+		BCF254421DBDADA700ABD6A7 /* KTCDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF254411DBDADA700ABD6A7 /* KTCDownloader.swift */; };
+		BCF254441DBDB6D100ABD6A7 /* IngreRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF254431DBDB6D100ABD6A7 /* IngreRecommend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		BC4286A81DB9BA0E0048617F /* UILabel+Commom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Commom.swift"; sourceTree = "<group>"; };
 		BC4286AA1DB9BB820048617F /* UIButton+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Common.swift"; sourceTree = "<group>"; };
 		BC4286AC1DB9C3890048617F /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		BCF2543D1DBD98F300ABD6A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BCF2543F1DBD9BF700ABD6A7 /* Controllers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Controllers.json; sourceTree = "<group>"; };
+		BCF254411DBDADA700ABD6A7 /* KTCDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTCDownloader.swift; sourceTree = "<group>"; };
+		BCF254431DBDB6D100ABD6A7 /* IngreRecommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRecommend.swift; sourceTree = "<group>"; };
 		F623F3E7899BF83812627EC9 /* Pods-TestKitchen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKitchen.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestKitchen/Pods-TestKitchen.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +198,7 @@
 				BC4286151DB9A5060048617F /* Assets.xcassets */,
 				BC4286171DB9A5060048617F /* LaunchScreen.storyboard */,
 				BC42861A1DB9A5060048617F /* Info.plist */,
+				BCF2543D1DBD98F300ABD6A7 /* Images.xcassets */,
 			);
 			path = TestKitchen;
 			sourceTree = "<group>";
@@ -370,6 +379,7 @@
 		BC42864F1DB9A8460048617F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				BCF254431DBDB6D100ABD6A7 /* IngreRecommend.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -532,6 +542,8 @@
 				BC4286A81DB9BA0E0048617F /* UILabel+Commom.swift */,
 				BC4286AA1DB9BB820048617F /* UIButton+Common.swift */,
 				BC4286AC1DB9C3890048617F /* Const.swift */,
+				BCF2543F1DBD9BF700ABD6A7 /* Controllers.json */,
+				BCF254411DBDADA700ABD6A7 /* KTCDownloader.swift */,
 			);
 			path = "Public公共类";
 			sourceTree = "<group>";
@@ -743,6 +755,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4286961DB9AF750048617F /* home_normal@2x.png in Resources */,
+				BCF254401DBD9BF700ABD6A7 /* Controllers.json in Resources */,
 				BC4286191DB9A5060048617F /* LaunchScreen.storyboard in Resources */,
 				BC4286951DB9AF750048617F /* community_select@3x.png in Resources */,
 				BC42869D1DB9AF750048617F /* mine_select@3x.png in Resources */,
@@ -751,6 +764,7 @@
 				BC4286A11DB9AF750048617F /* shike_select@3x.png in Resources */,
 				BC4286921DB9AF750048617F /* community_normal@2x.png in Resources */,
 				BC42869A1DB9AF750048617F /* mine_normal@2x.png in Resources */,
+				BCF2543E1DBD98F300ABD6A7 /* Images.xcassets in Resources */,
 				BC4286971DB9AF750048617F /* home_normal@3x.png in Resources */,
 				BC42869F1DB9AF750048617F /* shike_normal@3x.png in Resources */,
 				BC4286A51DB9AF750048617F /* shop_select@3x.png in Resources */,
@@ -842,12 +856,14 @@
 				BC4286701DB9AACF0048617F /* FoodClassViewController.swift in Sources */,
 				BC4286111DB9A5060048617F /* ViewController.swift in Sources */,
 				BC4286A91DB9BA0E0048617F /* UILabel+Commom.swift in Sources */,
+				BCF254441DBDB6D100ABD6A7 /* IngreRecommend.swift in Sources */,
 				BC4286741DB9AB830048617F /* MainTabBarViewController.swift in Sources */,
 				BC42860F1DB9A5060048617F /* AppDelegate.swift in Sources */,
 				BC4286721DB9AAE30048617F /* CommunityViewController.swift in Sources */,
 				BC42866E1DB9AAC50048617F /* IngredientsViewController.swift in Sources */,
 				BC42866A1DB9AA9A0048617F /* ProfileViewController.swift in Sources */,
 				BC4286AB1DB9BB820048617F /* UIButton+Common.swift in Sources */,
+				BCF254421DBDADA700ABD6A7 /* KTCDownloader.swift in Sources */,
 				BC4286661DB9A9290048617F /* BaseViewController.swift in Sources */,
 				BC4286AD1DB9C3890048617F /* Const.swift in Sources */,
 			);
@@ -994,10 +1010,12 @@
 			baseConfigurationReference = 170C38FD929CBFC32AAC6E0E /* Pods-TestKitchen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TestKitchen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zzj.TestKitchen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1006,10 +1024,12 @@
 			baseConfigurationReference = F623F3E7899BF83812627EC9 /* Pods-TestKitchen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = TestKitchen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zzj.TestKitchen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -9,4 +9,6 @@ target 'TestKitchen' do
     pod 'MJRefresh'
     pod 'SwiftyXMLParser'
     pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'SwiftyJSON'
+    pod 'XWSwiftRefresh', '~> 0.1.9'
 end
