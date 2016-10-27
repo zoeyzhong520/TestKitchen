@@ -12,7 +12,8 @@ class IngredientsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.cyanColor()
+        view.backgroundColor = UIColor.whiteColor()
+        automaticallyAdjustsScrollViewInsets = false
         downloadRecommentData()
     }
 
@@ -53,8 +54,28 @@ extension IngredientsViewController:KTCDownloaderProtocol {
     
     //下载成功
     func downloader(downloader: KTCDownloader, didFinishWithData data: NSData?) {
-        let str = NSString(data: data!, encoding: NSUTF8StringEncoding)
-        print(str!)
+//        let str = NSString(data: data!, encoding: NSUTF8StringEncoding)
+//        print(str!)
+        
+        if let tmpData = data {
+            //1.json解析
+            let recommendModel = IngreRecommend.parseData(tmpData)
+            
+            //2.显示UI
+            let recommendView = IngreRecommendView(frame: CGRectZero)
+            recommendView.model = recommendModel
+            view.addSubview(recommendView)
+            
+            //点击食材的推荐页面的某一个部分，跳转到后面的界面
+            recommendView.jumpClosure = { jumpUrl in
+                print(jumpUrl)
+            }
+            
+            //约束
+            recommendView.snp_makeConstraints(closure: { (make) in
+                make.edges.equalTo(self.view).inset(UIEdgeInsetsMake(64, 0, 49, 0))
+            })
+        }
     }
 }
 
