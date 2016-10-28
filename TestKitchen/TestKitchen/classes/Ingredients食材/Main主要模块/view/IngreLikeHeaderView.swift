@@ -19,6 +19,7 @@ class IngreLikeHeaderView: UIView {
         let textField = UITextField(frame: CGRectMake(40, 8, bounds.size.width-40*2, 28))
         textField.placeholder = "输入菜名或食材搜索"
         textField.borderStyle = .RoundedRect
+        textField.textAlignment = .Center
         addSubview(textField)
         
         //设置左边的的搜索图片

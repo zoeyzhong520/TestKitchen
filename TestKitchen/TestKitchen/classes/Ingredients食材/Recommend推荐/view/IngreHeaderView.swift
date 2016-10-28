@@ -9,7 +9,17 @@
 import UIKit
 
 class IngreHeaderView: UIView {
-
+    
+    //点击事件
+    var jumpClosure:IngreJumpColsure?
+    
+    //数据
+    var listModel:IngreRecommendWidgetList? {
+        didSet {
+            configText((listModel?.title)!)
+        }
+    }
+    
     //文字
     private var titleLabel:UILabel?
     
@@ -17,7 +27,7 @@ class IngreHeaderView: UIView {
     private var imageView:UIImageView?
     
     //图片尺寸
-    private var iconW:CGFloat = 44
+    private var iconW:CGFloat = 32
     
     //左右的间距
     private var space:CGFloat = 40
@@ -28,19 +38,36 @@ class IngreHeaderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        backgroundColor = UIColor(white: 0.8, alpha: 1.0)
+        //白色背景
+        let bgView = UIView.createView()
+        bgView.backgroundColor = UIColor.whiteColor()
+        bgView.frame = CGRectMake(0, 10, bounds.size.width, 44)
+        addSubview(bgView)
+        
+        //点击事件
+        let g = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        bgView.addGestureRecognizer(g)
+        
         //文字
         titleLabel = UILabel.createLabel(nil, textAlignment: .Left, font: UIFont.systemFontOfSize(18))
-        addSubview(titleLabel!)
+        bgView.addSubview(titleLabel!)
         
         //图片
         let image = UIImage(named: "more_icon")
         imageView = UIImageView(image: image)
-        addSubview(imageView!)
+        bgView.addSubview(imageView!)
         
     }
     
+    @objc private func tapAction() {
+        if jumpClosure != nil && listModel?.title_link != nil {
+            jumpClosure!((listModel?.title_link)!)
+        }
+    }
+    
     //显示文字
-    func configText(text:String) {
+    private func configText(text:String) {
         //计算文字的宽度
         let str = NSString(string: text)
         /*
@@ -49,20 +76,21 @@ class IngreHeaderView: UIView {
          参数3:文字的属性
          参数4:上下文
          */
-        let maxW = bounds.size.width-space*2-iconW-margin*2
+        let maxW = bounds.size.width-space*2-iconW-margin
         let attr = [NSFontAttributeName:UIFont.systemFontOfSize(18)]
         let w = str.boundingRectWithSize(CGSizeMake(maxW, 44), options: .UsesLineFragmentOrigin, attributes: attr, context: nil).size.width
         
-        let labelSpaceX = (maxW-w-margin*2-iconW)/2
+        let labelSpaceX = (maxW-w)/2
+        
         //设置文字
         titleLabel?.text = text
         //修改位置
         titleLabel?.frame = CGRectMake(space+labelSpaceX, 0, w, 44)
-        imageView?.frame = CGRectMake((titleLabel?.frame.origin.x)!, 0, iconW, iconW)
+        imageView?.frame = CGRectMake(titleLabel!.frame.origin.x+w+margin, 6, iconW, iconW)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }

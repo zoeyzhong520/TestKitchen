@@ -62,6 +62,11 @@
 		BCC45EE11DC05513009BC6EC /* search1.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC45EE01DC05513009BC6EC /* search1.png */; };
 		BCC45EE41DC05978009BC6EC /* IngreRedPacketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC45EE21DC05978009BC6EC /* IngreRedPacketCell.swift */; };
 		BCC45EE51DC05978009BC6EC /* IngreRedPacketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC45EE31DC05978009BC6EC /* IngreRedPacketCell.xib */; };
+		BCC707601DC2E086006AC560 /* IngreSceneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7075E1DC2E086006AC560 /* IngreSceneCell.swift */; };
+		BCC707611DC2E086006AC560 /* IngreSceneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC7075F1DC2E086006AC560 /* IngreSceneCell.xib */; };
+		BCC707631DC2E5AA006AC560 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = BCC707621DC2E5AA006AC560 /* play.png */; };
+		BCC707661DC300EF006AC560 /* IngreSceneListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC707641DC300EF006AC560 /* IngreSceneListCell.swift */; };
+		BCC707671DC300EF006AC560 /* IngreSceneListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC707651DC300EF006AC560 /* IngreSceneListCell.xib */; };
 		BCF2543E1DBD98F300ABD6A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF2543D1DBD98F300ABD6A7 /* Images.xcassets */; };
 		BCF254401DBD9BF700ABD6A7 /* Controllers.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF2543F1DBD9BF700ABD6A7 /* Controllers.json */; };
 		BCF254421DBDADA700ABD6A7 /* KTCDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF254411DBDADA700ABD6A7 /* KTCDownloader.swift */; };
@@ -148,6 +153,11 @@
 		BCC45EE01DC05513009BC6EC /* search1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search1.png; sourceTree = "<group>"; };
 		BCC45EE21DC05978009BC6EC /* IngreRedPacketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreRedPacketCell.swift; sourceTree = "<group>"; };
 		BCC45EE31DC05978009BC6EC /* IngreRedPacketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreRedPacketCell.xib; sourceTree = "<group>"; };
+		BCC7075E1DC2E086006AC560 /* IngreSceneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreSceneCell.swift; sourceTree = "<group>"; };
+		BCC7075F1DC2E086006AC560 /* IngreSceneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreSceneCell.xib; sourceTree = "<group>"; };
+		BCC707621DC2E5AA006AC560 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		BCC707641DC300EF006AC560 /* IngreSceneListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreSceneListCell.swift; sourceTree = "<group>"; };
+		BCC707651DC300EF006AC560 /* IngreSceneListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreSceneListCell.xib; sourceTree = "<group>"; };
 		BCF2543D1DBD98F300ABD6A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BCF2543F1DBD9BF700ABD6A7 /* Controllers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Controllers.json; sourceTree = "<group>"; };
 		BCF254411DBDADA700ABD6A7 /* KTCDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTCDownloader.swift; sourceTree = "<group>"; };
@@ -492,6 +502,10 @@
 				BC94BA4B1DC195670096EEAD /* IngreTodayCell.swift */,
 				BC94BA4C1DC195670096EEAD /* IngreTodayCell.xib */,
 				BC94BA531DC1AF8E0096EEAD /* IngreHeaderView.swift */,
+				BCC7075E1DC2E086006AC560 /* IngreSceneCell.swift */,
+				BCC7075F1DC2E086006AC560 /* IngreSceneCell.xib */,
+				BCC707641DC300EF006AC560 /* IngreSceneListCell.swift */,
+				BCC707651DC300EF006AC560 /* IngreSceneListCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -667,6 +681,7 @@
 		BC42868E1DB9AF750048617F /* 食材 */ = {
 			isa = PBXGroup;
 			children = (
+				BCC707621DC2E5AA006AC560 /* play.png */,
 				BC94BA4F1DC19A810096EEAD /* play-A@2x.png */,
 				BC94BA501DC19A810096EEAD /* play-A@3x.png */,
 				BCC45EE01DC05513009BC6EC /* search1.png */,
@@ -804,6 +819,7 @@
 			files = (
 				BC8D59571DBEF8400029E631 /* sdefaultImage.png in Resources */,
 				BC4286961DB9AF750048617F /* home_normal@2x.png in Resources */,
+				BCC707611DC2E086006AC560 /* IngreSceneCell.xib in Resources */,
 				BCF254401DBD9BF700ABD6A7 /* Controllers.json in Resources */,
 				BC4286191DB9A5060048617F /* LaunchScreen.storyboard in Resources */,
 				BC4286951DB9AF750048617F /* community_select@3x.png in Resources */,
@@ -825,11 +841,13 @@
 				BC94BA4E1DC195670096EEAD /* IngreTodayCell.xib in Resources */,
 				BC4286161DB9A5060048617F /* Assets.xcassets in Resources */,
 				BCC45EE11DC05513009BC6EC /* search1.png in Resources */,
+				BCC707671DC300EF006AC560 /* IngreSceneListCell.xib in Resources */,
 				BC42869B1DB9AF750048617F /* mine_normal@3x.png in Resources */,
 				BC4286931DB9AF750048617F /* community_normal@3x.png in Resources */,
 				BC4286A31DB9AF750048617F /* shop_normal@3x.png in Resources */,
 				BCC45EE51DC05978009BC6EC /* IngreRedPacketCell.xib in Resources */,
 				BC4286A41DB9AF750048617F /* shop_select@2x.png in Resources */,
+				BCC707631DC2E5AA006AC560 /* play.png in Resources */,
 				BC94BA521DC19A810096EEAD /* play-A@3x.png in Resources */,
 				BC42869E1DB9AF750048617F /* shike_normal@2x.png in Resources */,
 				BC4286981DB9AF750048617F /* home_select@2x.png in Resources */,
@@ -918,6 +936,8 @@
 				BC4286A91DB9BA0E0048617F /* UILabel+Commom.swift in Sources */,
 				BCF254441DBDB6D100ABD6A7 /* IngreRecommend.swift in Sources */,
 				BC4286741DB9AB830048617F /* MainTabBarViewController.swift in Sources */,
+				BCC707661DC300EF006AC560 /* IngreSceneListCell.swift in Sources */,
+				BCC707601DC2E086006AC560 /* IngreSceneCell.swift in Sources */,
 				BC42860F1DB9A5060048617F /* AppDelegate.swift in Sources */,
 				BC4286721DB9AAE30048617F /* CommunityViewController.swift in Sources */,
 				BC42866E1DB9AAC50048617F /* IngredientsViewController.swift in Sources */,
