@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		68BBEFDD81DC8E16B6C78598 /* Pods_TestKitchen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB9C47EBF557F38CD82E647 /* Pods_TestKitchen.framework */; };
+		BC10117E1DC6DD5D000D0394 /* IngrePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC10117C1DC6DD5D000D0394 /* IngrePostCell.swift */; };
+		BC10117F1DC6DD5D000D0394 /* IngrePostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC10117D1DC6DD5D000D0394 /* IngrePostCell.xib */; };
+		BC1011821DC70D45000D0394 /* IngreTalnetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1011801DC70D45000D0394 /* IngreTalnetCell.swift */; };
+		BC1011831DC70D45000D0394 /* IngreTalnetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1011811DC70D45000D0394 /* IngreTalnetCell.xib */; };
 		BC42860F1DB9A5060048617F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42860E1DB9A5060048617F /* AppDelegate.swift */; };
 		BC4286111DB9A5060048617F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4286101DB9A5060048617F /* ViewController.swift */; };
 		BC4286141DB9A5060048617F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4286121DB9A5060048617F /* Main.storyboard */; };
@@ -93,6 +97,10 @@
 /* Begin PBXFileReference section */
 		170C38FD929CBFC32AAC6E0E /* Pods-TestKitchen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestKitchen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestKitchen/Pods-TestKitchen.debug.xcconfig"; sourceTree = "<group>"; };
 		1BB9C47EBF557F38CD82E647 /* Pods_TestKitchen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestKitchen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10117C1DC6DD5D000D0394 /* IngrePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngrePostCell.swift; sourceTree = "<group>"; };
+		BC10117D1DC6DD5D000D0394 /* IngrePostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngrePostCell.xib; sourceTree = "<group>"; };
+		BC1011801DC70D45000D0394 /* IngreTalnetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngreTalnetCell.swift; sourceTree = "<group>"; };
+		BC1011811DC70D45000D0394 /* IngreTalnetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IngreTalnetCell.xib; sourceTree = "<group>"; };
 		BC42860B1DB9A5060048617F /* TestKitchen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestKitchen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC42860E1DB9A5060048617F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC4286101DB9A5060048617F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -506,6 +514,10 @@
 				BCC7075F1DC2E086006AC560 /* IngreSceneCell.xib */,
 				BCC707641DC300EF006AC560 /* IngreSceneListCell.swift */,
 				BCC707651DC300EF006AC560 /* IngreSceneListCell.xib */,
+				BC10117C1DC6DD5D000D0394 /* IngrePostCell.swift */,
+				BC10117D1DC6DD5D000D0394 /* IngrePostCell.xib */,
+				BC1011801DC70D45000D0394 /* IngreTalnetCell.swift */,
+				BC1011811DC70D45000D0394 /* IngreTalnetCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -854,6 +866,8 @@
 				BC4286A21DB9AF750048617F /* shop_normal@2x.png in Resources */,
 				BC4286941DB9AF750048617F /* community_select@2x.png in Resources */,
 				BC4286141DB9A5060048617F /* Main.storyboard in Resources */,
+				BC1011831DC70D45000D0394 /* IngreTalnetCell.xib in Resources */,
+				BC10117F1DC6DD5D000D0394 /* IngrePostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -935,6 +949,7 @@
 				BC4286111DB9A5060048617F /* ViewController.swift in Sources */,
 				BC4286A91DB9BA0E0048617F /* UILabel+Commom.swift in Sources */,
 				BCF254441DBDB6D100ABD6A7 /* IngreRecommend.swift in Sources */,
+				BC1011821DC70D45000D0394 /* IngreTalnetCell.swift in Sources */,
 				BC4286741DB9AB830048617F /* MainTabBarViewController.swift in Sources */,
 				BCC707661DC300EF006AC560 /* IngreSceneListCell.swift in Sources */,
 				BCC707601DC2E086006AC560 /* IngreSceneCell.swift in Sources */,
@@ -942,6 +957,7 @@
 				BC4286721DB9AAE30048617F /* CommunityViewController.swift in Sources */,
 				BC42866E1DB9AAC50048617F /* IngredientsViewController.swift in Sources */,
 				BC42866A1DB9AA9A0048617F /* ProfileViewController.swift in Sources */,
+				BC10117E1DC6DD5D000D0394 /* IngrePostCell.swift in Sources */,
 				BC4286AB1DB9BB820048617F /* UIButton+Common.swift in Sources */,
 				BC8D595A1DBF0A010029E631 /* IngreLikeCell.swift in Sources */,
 				BCF254421DBDADA700ABD6A7 /* KTCDownloader.swift in Sources */,
