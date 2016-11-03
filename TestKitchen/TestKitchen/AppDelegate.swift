@@ -21,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainCtrl = MainTabBarViewController()
         window?.rootViewController = mainCtrl
         
+        //修改导航的背景图片
+        (UINavigationBar.appearance()).setBackgroundImage(UIImage(named: "navBar"), forBarMetrics: UIBarMetrics.Default)
+        
         return true
     }
 

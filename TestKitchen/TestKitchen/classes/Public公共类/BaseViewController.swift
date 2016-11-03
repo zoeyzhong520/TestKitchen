@@ -14,6 +14,19 @@ import UIKit
  */
 
 class BaseViewController: UIViewController {
+    
+    //导航上面添加按钮
+    func addNavBtn(imageName:String, target:AnyObject, action:Selector, isLeft:Bool) {
+        
+        let btn = UIButton.createBtn(nil, bgImageName: imageName, highlightImageName: nil, selectImageName: nil, target: target, action: action)
+        btn.frame = CGRectMake(0, 0, 20, 30)
+        let barBtn = UIBarButtonItem(customView: btn)
+        if isLeft {
+            navigationItem.leftBarButtonItem = barBtn
+        }else{
+            navigationItem.rightBarButtonItem = barBtn
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -104,7 +104,7 @@ class IngrePostCell: UITableViewCell {
                 
             }
             //描述文字
-            
+            descLabel.text = listModel?.desc
         }
     }
     
