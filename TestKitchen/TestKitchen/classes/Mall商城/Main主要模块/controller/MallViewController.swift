@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MallViewController: BaseViewController {
+class MallViewController: KTCTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

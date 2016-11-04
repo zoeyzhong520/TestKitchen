@@ -21,6 +21,10 @@ class KTCService: NSObject {
                 let courseId = array[1]
             FoodCourseService.handleFoodCourse(courseId, onViewController: vc)
             }
+        }else if urlString.hasPrefix("http://video.szzhangchu.com") {
+            //播放视频
+            let array = urlString.componentsSeparatedByString("#")
+            VideoService.playVideo(array.last, onViewController: vc)
         }
     }
 }

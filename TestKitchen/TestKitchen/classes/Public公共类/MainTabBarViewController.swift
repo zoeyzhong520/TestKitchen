@@ -176,6 +176,20 @@ class MainTabBarViewController: UITabBarController {
 
     }
     
+    //显示tabbar
+    func showTabBar() {
+        UIView.animateWithDuration(0.25) { 
+            self.bgView?.hidden = false
+        }
+    }
+    
+    //隐藏tabbar
+    func hideTabBar() {
+        UIView.animateWithDuration(0.25) {
+            self.bgView?.hidden = true
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IngredientsViewController: BaseViewController {
+class IngredientsViewController: KTCTabViewController {
 
     //滚动视图
     private var scrollView:UIScrollView?

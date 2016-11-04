@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: BaseViewController {
+class ProfileViewController: KTCTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

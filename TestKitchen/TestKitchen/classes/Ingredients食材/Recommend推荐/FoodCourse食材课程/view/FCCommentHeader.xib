@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FCCommentHeader" customModule="TestKitchen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANJ-Py-W3t" userLabel="titleLabel">
+                    <rect key="frame" x="20" y="6" width="335" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="5ug-dZ-zQA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aW7-NI-oBu">
+                    <rect key="frame" x="20" y="32" width="335" height="20"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="YNI-wf-l3m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="我要评论"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="commentAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uiq-zX-Vcw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aW7-NI-oBu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="8eA-ss-LFH"/>
+                <constraint firstItem="ANJ-Py-W3t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="9KH-JX-26X"/>
+                <constraint firstAttribute="trailing" secondItem="aW7-NI-oBu" secondAttribute="trailing" constant="20" id="I43-uz-5BX"/>
+                <constraint firstItem="aW7-NI-oBu" firstAttribute="top" secondItem="ANJ-Py-W3t" secondAttribute="bottom" constant="6" id="W08-aV-TJt"/>
+                <constraint firstAttribute="trailing" secondItem="ANJ-Py-W3t" secondAttribute="trailing" constant="20" id="n13-3V-ZOF"/>
+                <constraint firstItem="ANJ-Py-W3t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ufO-vD-l4D"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="ANJ-Py-W3t" id="2vC-zj-HBl"/>
+            </connections>
+            <point key="canvasLocation" x="255.5" y="168"/>
+        </view>
+    </objects>
+</document>
