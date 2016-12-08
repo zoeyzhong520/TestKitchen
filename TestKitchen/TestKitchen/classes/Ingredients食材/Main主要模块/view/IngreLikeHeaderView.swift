@@ -20,6 +20,7 @@ class IngreLikeHeaderView: UIView {
         textField.placeholder = "输入菜名或食材搜索"
         textField.borderStyle = .RoundedRect
         textField.textAlignment = .Center
+        textField.delegate = self
         addSubview(textField)
         
         //设置左边的的搜索图片
@@ -35,3 +36,12 @@ class IngreLikeHeaderView: UIView {
     }
 
 }
+
+extension IngreLikeHeaderView:UITextFieldDelegate {
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
