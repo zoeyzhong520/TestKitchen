@@ -12,7 +12,7 @@ class FoodClassViewController: KTCTabViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.yellowColor()
+        view.backgroundColor = UIColor.whiteColor()
 
         // Do any additional setup after loading the view.
     }

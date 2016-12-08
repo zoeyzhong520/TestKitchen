@@ -161,6 +161,7 @@ class MainTabBarViewController: UITabBarController {
             //使用类名创建类的对象
             let ctrl = NSClassFromString(name) as! UIViewController.Type
             let vc = ctrl.init()
+            vc.title = titles[i]
             
             //导航
             let navCtrl = UINavigationController(rootViewController: vc)
@@ -171,7 +172,7 @@ class MainTabBarViewController: UITabBarController {
         //3.设置图片和文字
         //自定制TabBar
         //自定制
-        tabBar.hidden = true
+        //tabBar.hidden = true
         createMyTabBar(images,titles: titles)
 
     }

@@ -19,14 +19,14 @@ class KTCTabViewController: BaseViewController {
         mainCtrl.showTabBar()
     }
     
-    override func viewDidDisappear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        //隐藏tabbar
-        let appDele = UIApplication.sharedApplication().delegate as! AppDelegate
-        let mainCtrl = appDele.window?.rootViewController as! MainTabBarViewController
-        mainCtrl.hideTabBar()
-    }
+//    override func viewDidDisappear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        //隐藏tabbar
+//        let appDele = UIApplication.sharedApplication().delegate as! AppDelegate
+//        let mainCtrl = appDele.window?.rootViewController as! MainTabBarViewController
+//        mainCtrl.hideTabBar()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
